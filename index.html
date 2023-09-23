@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Honda Vario 160</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="bike">
+         <nav>
+            <img src="image/Logo.png" class="logo">
+            <a href="#" class="btn">SPESIFIKASI</a>
+         </nav>
+         <div class="content">
+            <h2>HONDA</h2>
+            <h1>VARIO 160 ABS</h1>
+            <p>Rasakan sensasi berkendara Matik Besar dengan All New Honda Vario 160, dilengkapi mesin performa tinggi 160 cc 4 Valve eSP+ dan fitur yang canggih.</p>
+            <h3>Pilih Varian Warna</h3>
+            <div class="colour-select">
+                <div id="Putih"></div>
+                <div id="HitamGlosy"></div>
+                <div id="HitamDoff"></div>
+            </div>
+         </div>
+    </div>
+    <script>
+        let PutihBtn            = document.getElementById("Putih");
+        let HitamGlosyBtn       = document.getElementById("HitamGlosy");
+        let HitamDoffBtn        = document.getElementById("HitamDoff");
+        let bike                = document.getElementById("bike") ;
+            
+        PutihBtn.onclick = function() {
+            bike.style.backgroundImage = "url(image/Var1.png)";
+        }
+        HitamDoffBtn.onclick = function() {
+            bike.style.backgroundImage = "url(image/Var2.png)";
+        }
+        HitamGlosyBtn.onclick = function() {
+            bike.style.backgroundImage = "url(image/Var3.png)";
+        }
+    </script>
+</body>
+</html>
